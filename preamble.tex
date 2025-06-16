@@ -1,0 +1,72 @@
+% -- Page Setup --
+\usepackage[a4paper, left=1.2in, right=0.8in, top=1in, bottom=1in]{geometry}
+
+% -- Core Packages --
+\usepackage{graphicx}      % For logos and images
+\usepackage{fancyhdr}      % Custom headers/footers
+\usepackage{titlesec}      % Section title formatting
+\usepackage{tcolorbox}     % Abstract box styling
+\usepackage{booktabs}      % Better tables
+\usepackage{enumitem}      % Customizable lists
+\usepackage{hyperref}      % Links
+\usepackage{setspace}      % Line spacing
+\usepackage{xcolor}        % Custom colors
+\usepackage{parskip}       % Paragraph spacing without indent
+\usepackage{multicol}      % Multiple columns
+\usepackage{array}         % Table formatting
+\usepackage{fontawesome5}  % Icons (e.g. lock symbol)
+\usepackage{mdframed}      % For styled boxes
+\usepackage{ragged2e}      % For justified text
+\usepackage{url} % For long URLs like the DOI
+\usepackage{microtype}     % Improves spacing and hyphenation
+\usepackage{caption}       % For caption control if needed
+\usepackage{lipsum}
+
+
+% -- Fonts & Spacing --
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.25}
+\pagestyle{plain}
+
+% -- Section Styling --
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1.5em}{1em}
+\titlespacing*{\subsection}{0pt}{1em}{0.5em}
+
+% -- Abstract Box Styling --
+\tcbset{
+  colback=gray!10,
+  colframe=black,
+  width=\textwidth,
+  arc=2mm,
+  boxrule=0.4pt,
+  left=6pt, right=6pt, top=6pt, bottom=6pt,
+  boxsep=5pt,
+}
+
+% -- Custom Colors --
+\definecolor{leftbarcolor}{HTML}{F2F2F2}    % Pale gray for left box
+\definecolor{titlecolor}{HTML}{000000}      % Black text
+\definecolor{headcolor}{HTML}{336699}       % Header blue (unused but included)
+\definecolor{jabsgreen}{HTML}{00713D}       % Green bar from title
+\definecolor{sectiongray}{HTML}{E6E6E6}      % Light gray background for section label
+
+% -- Custom Box for Metadata Left Panel --
+\newmdenv[
+  backgroundcolor=leftbarcolor,
+  linecolor=white,
+  innerleftmargin=8pt,
+  innerrightmargin=8pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  roundcorner=2pt
+]{leftinfobox}
+
+% -- Hyperref Link Colors --
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+}
