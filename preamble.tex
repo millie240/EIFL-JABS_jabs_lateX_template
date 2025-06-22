@@ -1,5 +1,4 @@
 % -- Page Setup --
-\usepackage[a4paper, left=1.2in, right=0.8in, top=1in, bottom=1in]{geometry}
 
 % -- Core Packages --
 \usepackage{graphicx}      % For logos and images
@@ -21,17 +20,25 @@
 \usepackage{microtype}     % Improves spacing and hyphenation
 \usepackage{caption}       % For caption control if needed
 \usepackage{lipsum}
+\RequirePackage{geometry}
+\geometry{letterpaper,top=0.5in,bottom=1in,left=1in,right=1in,includeheadfoot}
+\usepackage{mdframed}      % For custom boxes
+\usepackage{ragged2e}      % For justified text
+\usepackage{url}           % For URLs
+\usepackage{microtype}     % Improves text spacing
+\usepackage{caption}       % For caption control if needed
 
 
 % -- Fonts & Spacing --
 \setlength{\parindent}{0pt}
-\renewcommand{\baselinestretch}{1.25}
+\renewcommand{\baselinestretch}{1.2} % Line spacing
+\usepackage{mathptmx}
 \pagestyle{plain}
 
 % -- Section Styling --
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
-\titlespacing*{\section}{0pt}{1.5em}{1em}
+\titlespacing*{\section}{0pt}{1.25em}{1em}
 \titlespacing*{\subsection}{0pt}{1em}{0.5em}
 
 % -- Abstract Box Styling --

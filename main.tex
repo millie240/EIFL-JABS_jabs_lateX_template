@@ -1,4 +1,4 @@
-\documentclass[11pt]{extarticle}
+\documentclass[11pt]{jabs}
 \input{preamble}
 
 \usepackage{fancyhdr}
@@ -36,52 +36,49 @@
 
 \begin{document}
 
-% Use title page style here (no page number)
-\thispagestyle{titlepagestyle}
+\vspace*{-1in} % Adjust negative space if needed
 
-% Use no page numbering on title page
-\pagenumbering{gobble}
+\pagestyle{titlepagestyle} % apply footer with DOI, no header
 
-% Title page content with bottom margin to prevent footer overlap
-\vspace*{0.5cm} % small top padding
-
+\noindent
 \begin{minipage}{\textwidth}
+
+  % Logos row
   \noindent
-  \makebox[\textwidth]{%
-    \begin{minipage}[t]{0.3\textwidth}
-      \includegraphics[width=0.3\linewidth]{images/logo-left.png}
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{0.4\textwidth}
-      \centering
-      \textit{Journal of Agriculture and Biomedical Sciences -- JABS 2024}
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{0.3\textwidth}
-      \raggedleft
-      \includegraphics[width=0.3\linewidth]{images/logo-right.png}
-    \end{minipage}%
-  }
+  \begin{minipage}[c]{0.25\textwidth}
+    \includegraphics[width=2\linewidth,height=3cm,keepaspectratio]{images/logo-left.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.5\textwidth}
+    \centering
+    \textit{\makebox[0pt][c]{Journal of Agriculture and Biomedical Sciences -- JABS 2024}}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.25\textwidth}
+    \raggedleft
+    \includegraphics[width=2\linewidth,height=3cm,keepaspectratio]{images/logo-right.png}
+  \end{minipage}
 
   \vspace{0.5em}
   {\color{jabsgreen}\rule{\textwidth}{2pt}}
-  \vspace{1.5em}
+  \vspace{1em}
 
+  % Metadata + abstract content row
   \noindent
   \begin{minipage}[t]{0.35\textwidth}
     \begin{leftinfobox}
       \small
+      \href{https://example.com}{\includegraphics[width=0.9\linewidth]{images/check_for_updates.png}}\\[0.5em]
       \faUnlock \textbf{~OPEN ACCESS} \\[0.75em]
-
       \textbf{How to Cite:} \\
-      John Doe, Jane Doe J, Doe J, John. Optimization of the production of a JABS journal in LateX \\
+      John Doe, Jane Doe J, Doe J, John. Optimization of the production of a JABS journal in LaTeX \\
       \textit{Journal of Agricultural and Biomedical Sciences}. 8(4). \\
       \url{https://journals.unza.zm/index.php/JABS/article/view/1405} \\[1em]
 
       \textbf{Published:} 25\textsuperscript{th} May 2025 \\[0.5em]
 
       \textbf{Copyright:} \\
-      {\small\faCopyright}~This is an open access article distributed under the terms of the \\
+      {\small\faCopyright} This is an open access article distributed under the terms of the \\
       \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution License}, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. \\[0.5em]
 
       \textbf{Competing interests:} \\
@@ -93,10 +90,7 @@
     \vspace{0pt}
     \textbf{RESEARCH ARTICLE} \\[0.6em]
 
-    {\Large\bfseries
-      [INSERT TITLE HERE]   
-
-    } \\[1em]
+    {\Large\bfseries [INSERT TITLE HERE]} \\[1em]
 
     \small
     \textbf{Author one \textsuperscript{1,2*}, Author two\textsuperscript{1}, Author three\textsuperscript{3}, Author Four\textsuperscript{1}} \\[0.5em]
@@ -107,36 +101,38 @@
 
     \textbf{* Corresponding author:} \href{mailto:yourmail@hotmail.com}{yourmail@hotmail.com} / \href{mailto:yourmail@nisir.org.zm}{yourmail@nisir.org.zm}
 
-    \vspace{1.2em}
+    \vspace{1em}
     \normalsize
     \textbf{Abstract} \\[0.25em]
     \justifying
     \sloppy
-    \lipsum [1-2]
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut
+  purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+  Curabitur dictum gravida mauris. Nam arcu libero, nonummy
+  eget, consectetuer id, vulputate a, magna. Donec vehicula
+  augue eu neque. Pellentesque habitant morbi tristique senec-
+  tus et netus et malesuada fames ac turpis egestas. Mauris ut
+  leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibu-
+  lum urna fringilla ultrices. Phasellus eu tellus sit amet tortor
+  gravida placerat.
 
     \vspace{1em}
-    \textbf{Keywords:} Keyword 1, keyword 2, keyXXxxxxxx, XXxxxxxx, XXxxxxxx.
+    \textbf{Keywords:} Keyword1, Keyword2, Keyword3.
   \end{minipage}
 
-  \vspace{3em}
-
-  \begin{center}
-    \small
-    JABS 2025 \textbar{} \href{https://doi.org/10.53974/unza.jabs.8.4.1405}{https://doi.org/10.53974/unza.jabs.8.4.1405}
-  \end{center}
 \end{minipage}
 
-% Clear page and start document content with page numbering from 1
 \clearpage
 
-% Set page style for main document pages
+% Switch to main page style and start page numbering
 \pagestyle{mainstyle}
-
-% Start page numbering at 1 here (physical page 2)
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-% --- Now your main document sections ---
+% Main content starts here
+
+
+% --- Main content starts here ---
 
 \section*{Introduction}
 \lipsum[1-3]
