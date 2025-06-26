@@ -6,6 +6,8 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{float}
+
 
 \definecolor{jabsgreen}{RGB}{0,128,0} % green color
 
@@ -128,29 +130,84 @@
 \pagestyle{mainstyle}
 \setcounter{page}{1}
 \pagenumbering{arabic}
+\switchcolumn
 
-
-% --- Main content starts here ---
+\begin{adjustwidth}{0.35\textwidth}{0pt} % shift content right by 35% of the page width% --- Main content starts here ---
 
 \section*{Introduction}
-\lipsum[1-3]
+\lipsum[1-2]
 
 \section*{Materials and Methods}
-\lipsum[4-6]
+\lipsum[3-4]
+
+
+% Exit adjusted width so image spans full page
+\end{adjustwidth}
+
+\vspace{1em}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/materials-figure.png}
+  \caption{Illustration or graphical summary of key findings discussed in the text.}
+  \label{fig:materials and methods}
+\end{figure}
+\vspace{1em}
+
+% Resume adjusted width for rest of text
+\begin{adjustwidth}{0.35\textwidth}{0pt}
 
 \section*{Results}
-\lipsum[7-9]
+\lipsum[5-6]
 
+
+% END adjustwidth to allow table to span full page width
+\end{adjustwidth}
+
+\vspace{1em}
+\rowcolors{2}{gray!10}{white} % alternate row colors starting from second row
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{12pt}
+
+\begin{tabular}{>{\bfseries}l c c c}
+\toprule
+Parameter & Group A & Group B & Difference \\
+\midrule
+Height (cm)      & 165.2 ± 5.1  & 170.8 ± 4.8  & +5.6 \\
+Weight (kg)      & 60.3 ± 6.0   & 65.5 ± 5.9   & +5.2 \\
+Blood Pressure   & 120/80       & 130/85       & —    \\
+Heart Rate (bpm) & 72           & 76           & +4   \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Comparison of physical and health-related parameters} between Group A and Group B. Values represent mean ± standard deviation.}
+\label{tab:styled-results}
+\end{table}
+\vspace{1em}
+
+\begin{adjustwidth}{0.35\textwidth}{0pt}
 \section*{Discussion}
-\lipsum[10-12]
+\lipsum[7-8]
+
+\end{adjustwidth}
+
+\vspace{1em}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/discussion-figure.png}
+  \caption{Illustration or graphical summary of key findings discussed in the text.}
+  \label{fig:discussion}
+\end{figure}
+\vspace{1em}
 
 \section*{Acknowledgement}
 We thank all contributors and funding sources...
 
-\section*{References}
+\section*{}
 \begin{thebibliography}{9}
 \bibitem{ref1} Doe J John.,Jane Doe., et al. (2025). Title of referenced article. \textit{Journal Name}, 8(4), 123–130.
 \bibitem{ref2} Another reference...
 \end{thebibliography}
 
+\end{adjustwidth}
 \end{document}

@@ -3,7 +3,7 @@
 
 \LoadClass[12pt,letterpaper]{extarticle} 
 
-% Load essential packages (again, nothing changes in your LaTeX source)
+% Load essential packages
 \RequirePackage{graphicx}
 \RequirePackage{fancyhdr}
 \RequirePackage{titlesec}
