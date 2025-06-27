@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.24)  27 JUN 2025 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.24)  27 JUN 2025 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,7 +1171,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2 <./images/materials-figure.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-7.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1222,7 +1222,7 @@ ee-Solid.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 2197250 bytes).
+Output written on main.pdf (5 pages, 2197253 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
