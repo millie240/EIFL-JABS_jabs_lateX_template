@@ -1,39 +1,9 @@
-% -- Page Setup --
-
-% -- Core Packages --
-\usepackage{graphicx}      % For logos and images
-\usepackage{fancyhdr}      % Custom headers/footers
-\usepackage{titlesec}      % Section title formatting
-\usepackage{tcolorbox}     % Abstract box styling
-\usepackage{booktabs}      % Better tables
-\usepackage{enumitem}      % Customizable lists
-\usepackage{hyperref}      % Links
-\usepackage{setspace}      % Line spacing
-\usepackage{xcolor}        % Custom colors
-\usepackage{parskip}       % Paragraph spacing without indent
-\usepackage{multicol}      % Multiple columns
-\usepackage{array}         % Table formatting
-\usepackage{fontawesome5}  % Icons (e.g. lock symbol)
-\usepackage{mdframed}      % For styled boxes
-\usepackage{ragged2e}      % For justified text
-\usepackage{url} % For long URLs like the DOI
-\usepackage{microtype}     % Improves spacing and hyphenation
-\usepackage{caption}       % For caption control if needed
-\usepackage{lipsum}
-\RequirePackage{geometry}
-\geometry{letterpaper,top=0.5in,bottom=1in,left=1in,right=1in,includeheadfoot}
-\usepackage{mdframed}      % For custom boxes
-\usepackage{ragged2e}      % For justified text
-\usepackage{url}           % For URLs
-\usepackage{microtype}     % Improves text spacing
-\usepackage{caption}       % For caption control if needed
-\usepackage{changepage}      % For adjusting margins in specific areas
-
-
 % -- Fonts & Spacing --
 \setlength{\parindent}{0pt}
 \renewcommand{\baselinestretch}{1.2} % Line spacing
 \usepackage{mathptmx}
+\usepackage{float}
+\usepackage[table]{xcolor}
 \pagestyle{plain}
 
 % -- Section Styling --
@@ -54,11 +24,8 @@
 }
 
 % -- Custom Colors --
-\definecolor{leftbarcolor}{HTML}{F2F2F2}    % Pale gray for left box
-\definecolor{titlecolor}{HTML}{000000}      % Black text
-\definecolor{headcolor}{HTML}{336699}       % Header blue (unused but included)
-\definecolor{jabsgreen}{HTML}{00713D}       % Green bar from title
-\definecolor{sectiongray}{HTML}{E6E6E6}      % Light gray background for section label
+\definecolor{leftbarcolor}{HTML}{F2F2F2}
+\definecolor{jabsgreen}{HTML}{00713D}
 
 % -- Custom Box for Metadata Left Panel --
 \newmdenv[
@@ -78,6 +45,3 @@
     urlcolor=blue,
     citecolor=blue,
 }
-
-%---------------------------------------------------------------------------experiment%
-

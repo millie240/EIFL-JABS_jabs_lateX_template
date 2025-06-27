@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{jabs}[2025/06/22 JABS Custom Article Class]
 
-\LoadClass[12pt,letterpaper]{extarticle} 
+\LoadClass[11pt,letterpaper]{extarticle}
 
 % Load essential packages
 \RequirePackage{graphicx}
@@ -23,6 +23,10 @@
 \RequirePackage{microtype}
 \RequirePackage{caption}
 \RequirePackage{lipsum}
+\RequirePackage{geometry}
+\RequirePackage{changepage}
 
-% Pass control back to main and preamble
+% Layout control
+\geometry{letterpaper,top=0.5in,bottom=1in,left=1in,right=1in,includeheadfoot}
+
 \endinput
